@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/naviblue"
+    tools:context=".LogInActivity">
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:background="#800080"
+        android:id="@+id/view"
+        />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_below="@id/view"
+        android:id="@+id/img_view"
+        android:layout_marginTop="-64dp"
+        android:src="@drawable/wave"
+        />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/logo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/img_view"
+        android:layout_marginLeft="290dp"
+        android:layout_marginTop="-41dp"
+        android:src="@drawable/logo"
+        app:civ_border_color="#800080"
+        app:civ_border_width="2dp" />
+
+    <TextView
+        android:id="@+id/text_view1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img_view"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textStyle="bold"
+        android:layout_marginTop="-35dp"
+        android:text="Hello there,"
+        android:layout_marginLeft="20dp"
+        android:textColor="@android:color/white"
+        android:textSize="35sp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="welcome back"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textStyle="bold"
+        android:textSize="35sp"
+        android:textColor="@android:color/white"
+        android:id="@+id/text_view2"
+        android:layout_below="@+id/text_view1"
+        android:layout_marginLeft="35dp"
+
+
+
+        />
+    <EditText
+        android:id="@+id/edit1"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:drawableLeft="@drawable/email"
+        android:inputType="textEmailAddress"
+        android:layout_below="@id/text_view2"
+        android:layout_marginLeft="19dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="19dp"
+        android:textColor="@android:color/white"
+        android:background="@drawable/text_background"
+        android:hint="Email"
+        android:padding="9dp"
+        android:textColorHint="@color/grey" />
+    <EditText
+        android:id="@+id/edit2"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:drawableLeft="@drawable/lock"
+        android:layout_below="@id/edit1"
+        android:layout_marginLeft="19dp"
+        android:layout_marginTop="12dp"
+        android:inputType="textPassword"
+        android:textColor="@android:color/white"
+        android:layout_marginRight="19dp"
+        android:background="@drawable/text_background"
+        android:hint="Password"
+        android:padding="9dp"
+        android:textColorHint="@color/grey" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forgot password?"
+        android:textColor="@android:color/white"
+        android:textSize="22sp"
+        android:id="@+id/text_view3"
+        android:layout_below="@id/edit2"
+        android:layout_alignRight="@id/edit2"
+        android:layout_marginTop="15dp"
+        />
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Remember me and keep me logged in"
+        android:textColor="@android:color/white"
+        android:id="@+id/checkbox"
+        android:textSize="16sp"
+        android:layout_below="@id/text_view3"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+
+
+
+        />
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/button"
+        android:layout_below="@id/checkbox"
+        android:background="@drawable/button_background"
+        android:text="Log In"
+        android:textSize="30sp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textColor="@android:color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:textStyle="bold"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="___Or you can also___"
+        android:fontFamily="sans-serif-thin"
+        android:textColor="@android:color/white"
+        android:textSize="25sp"
+        android:id="@+id/text_view4"
+        android:layout_below="@id/button"
+        android:layout_centerHorizontal="true"
+        />
+
+
+        <EditText
+            android:id="@+id/google"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="22dp"
+            android:background="@drawable/text_background"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textStyle="bold"
+            android:gravity="center_horizontal"
+            android:drawableRight="@drawable/search"
+            android:layout_below="@id/text_view4"
+            android:padding="16dp"
+            android:text="SIGN IN WITH GOOGLE"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="23sp" />
+
+
+
+
+
+</RelativeLayout>

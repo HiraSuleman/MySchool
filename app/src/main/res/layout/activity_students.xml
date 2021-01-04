@@ -4,10 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".StudentsActivity">
     <View
         android:layout_width="wrap_content"
-        android:layout_height="150dp"
+        android:layout_height="100dp"
         android:background="#800080"
         android:id="@+id/view"
         />
@@ -15,25 +15,10 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="200dp"
+        android:id="@+id/img_view"
         android:layout_below="@id/view"
         android:layout_marginTop="-64dp"
         android:src="@drawable/wave"
         />
-    <de.hdodenhof.circleimageview.CircleImageView
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        android:src="@drawable/logo"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        app:civ_border_width="2dp"
-        app:civ_border_color="#800080"
-        android:id="@+id/img"
-        android:layout_marginTop="15dp"
-        />
-
-
-
-
-
 
 </RelativeLayout>
